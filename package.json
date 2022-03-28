@@ -1,0 +1,68 @@
+{
+  "name": "standard",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Congratulations, you have now installed the Sanity Content Studio, an open source real-time content editing environment connected to the Sanity backend.",
+  "main": "package.json",
+  "author": "Quality Pre <qualitypre@protonmail.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "sanity start",
+    "build": "sanity build"
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "@sanity/base": "^2.29.2",
+    "@sanity/core": "^2.28.1",
+    "@sanity/default-layout": "^2.29.2",
+    "@sanity/default-login": "^2.29.2",
+    "@sanity/desk-tool": "^2.29.2",
+    "@sanity/eslint-config-studio": "^2.0.0",
+    "@sanity/vision": "^2.29.2",
+    "prop-types": "^15.7",
+    "react": "^17.0",
+    "react-dom": "^17.0",
+    "styled-components": "^5.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/eslint-parser": "^7.17.0",
+    "@babel/preset-react": "^7.16.7",
+    "@types/node": "^16.11.26",
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.16.0",
+    "eslint": "^8.12.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^16.1.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-wesbos": "^3.0.2",
+    "eslint-plugin-html": "^6.2.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "prettier": "^2.6.1",
+    "typescript": "^4.6.3"
+  },
+  "eslintConfig": {
+    "extends": [
+      "wesbos"
+    ],
+    "rules": {
+      "no-console": 2,
+      "react/prop-types": 0,
+      "prettier/prettier": [
+        "error",
+        {
+          "trailingComma": "es5",
+          "singleQuote": true,
+          "printWidth": 120,
+          "tabWidth": 4
+        }
+      ]
+    }
+  }
+}
